@@ -15,7 +15,72 @@
             text-align: center;
             color: #fff;
         }
+/* ================= NAVBAR ================= */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    width: 90%;
+    max-width: 700px;
+    height: 55px;
 
+    background: rgba(34, 34, 34, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+
+    z-index: 1000;
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    line-height: 55px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1em;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+nav span {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: calc(100% / 7); 
+    height: 45px;
+    background: linear-gradient(45deg, #020202, #020202);
+    border-radius: 12px;
+    transition: 0.4s ease;
+    box-shadow: 0 0 10px rgba(16, 17, 17, 0.6);
+}
+
+
+nav a:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+    nav {
+        height: 50px;
+    }
+
+    nav a {
+        font-size: 0.8em;
+    }
+
+    nav span {
+        height: 40px;
+    }
+}
         h1 {
             font-size: 3rem;
             margin-bottom: 10px;
@@ -70,25 +135,24 @@
             text-decoration: underline;
         }
 
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 14px;
-            color: #555;
-        } 
-        
-        button {
-            text-align: center;
-            background-color: #f7f8f8;
-            color: rgb(238, 236, 236);
-            border: none;
-            padding: 10px 20px;
-            border-radius: 50px;
-            font-size: 14px;
-        }
+      
     </style>
 </head>
 <body>
+     </div>
+
+        <nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="Amira.html">Amira</a>
+    <a href="anisah.html">Anisah</a> 
+    <a href="dewi.html">Dewi</a> 
+    <a href="citra.html">Citra</a> 
+    <a href="intan.html">Intan</a> 
+    <a href="RrVira.html">Rr.Vira</a> 
+    <a href="vira.html">Rara</a>
+    <span></span>
+</nav>
+
 
     <h1>Rr. Vira's Page</h1>
     <h3>Welcome to my page!</h3>
@@ -107,8 +171,6 @@
             Motto saya adalah <b>“Tetap semangat.”</b>
         </p>
     </div>
-    <footer><button>
-        <a href="index.html">Kembali ke Beranda</a></button>
-    </footer>
+   
 </body>
 </html>

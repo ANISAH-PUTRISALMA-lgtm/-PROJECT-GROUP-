@@ -1,51 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lobby masuk</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+}
+.box {
+    max-width: 450px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transform: translateY(30px);
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (max-width: 500px) {
+    .box {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <div class="lobby-container">
-        <h1>🌒PORTOFOLIO🍷</h1>
-        <p class="subtitle">✨ANGGOTA KELOMPOK WANG LIN✨</p>
+     </div>
 
- 
-<div class="menu-list">
-<a href="Amira.html" class="menu-link">Amira</a>
+        <nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="Amira.html">Amira</a>
+    <a href="anisah.html">Anisah</a> 
+    <a href="dewi.html">Dewi</a> 
+    <a href="citra.html">Citra</a> 
+    <a href="intan.html">Intan</a> 
+    <a href="RrVira.html">Rr.Vira</a> 
+    <a href="vira.html">Rara</a>
+    <span></span>
+</nav>
+
+<div class="box">
+    <h1>🌒 PORTOFOLIO 🍷</h1>
+    <p class="subtitle">✨ ANGGOTA KELOMPOK WANG LIN ✨</p>
 </div>
-
-<div class="menu-list">
-<a href="anisah.html" class="menu-link">Anisah</a>
-</div>
-
-<div class="menu-list">
-<a href="Citra.html" class="menu-link">Citra</a>
-</div>
-
-<div class="menu-list">
-<a href="Dewi.html" class="menu-link">Dewi</a>
-</div>
-
-<div class="menu-list">
-<a href="RrVira.html" class="menu-link">Vira</a>
-</div>
-
-<div class="menu-list">
-<a href="Intan.html" class="menu-link">Intan</a>
-</div>
-
-<div class="menu-list">
-<a href="vira.html" class="menu-link">Rara</a>
-</div>
-
-
-
-<div class="footer">
-            <p>© 2026 Lobby masuk</p>
-        </div> 
 
 </body>
 </html>
